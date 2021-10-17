@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import {StyleSheet} from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, View, Text } from 'react-native';
 import {
   ViroARScene,
   ViroText,
@@ -33,18 +33,21 @@ const HelloWorldSceneAR = () => {
 
 export default () => {
   return (
-    <ViroARSceneNavigator
-      autofocus={true}
-      initialScene={{
-        scene: HelloWorldSceneAR,
-      }}
-      style={styles.f1}
-    />
+    // <ViroARSceneNavigator
+    //   autofocus={true}
+    //   initialScene={{
+    //     scene: HelloWorldSceneAR,
+    //   }}
+    //   style={styles.f1}
+    // />
+    <View>
+      <Text>Hi</Text>
+    </View>
   );
 };
 
 var styles = StyleSheet.create({
-  f1: {flex: 1},
+  f1: { flex: 1 },
   helloWorldTextStyle: {
     fontFamily: 'Arial',
     fontSize: 30,
